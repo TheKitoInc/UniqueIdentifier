@@ -3,11 +3,13 @@
 declare(strict_types=1);
 
 namespace Kito\UniqueIdentifier;
+
 /**
- * Description of UniqueIdentifier
+ * Description of UniqueIdentifier.
  *
  * @author Instalacion
  */
-class UniqueIdentifier {
+class UniqueIdentifier
+{
     //put your code here
 }
