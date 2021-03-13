@@ -23,6 +23,6 @@ class MachineIdentifier
             return null;
         }
 
-        return file_get_contents(linuxMachineIDPath);
+        return file_get_contents(self::linuxMachineIDPath);
     }
 }
