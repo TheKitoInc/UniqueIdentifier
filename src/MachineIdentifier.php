@@ -12,19 +12,17 @@ namespace Kito\UniqueIdentifier;
 class MachineIdentifier
 {
     const linuxMachineIDPath = '/etc/machine-id';
-    
+
     public static function getLinuxMachineID(): ?string
     {
-        if(!file_exists(self::linuxMachineIDPath))
-        {
+        if (!file_exists(self::linuxMachineIDPath)) {
             return null;
         }
-            
-        if(!is_readable(self::linuxMachineIDPath))
-        {
+
+        if (!is_readable(self::linuxMachineIDPath)) {
             return null;
         }
-        
+
         return file_get_contents(linuxMachineIDPath);
     }
 }

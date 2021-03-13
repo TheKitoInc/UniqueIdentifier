@@ -31,6 +31,6 @@ class MachineIdentifierTest extends TestCase
         $lmid = Kito\UniqueIdentifier\MachineIdentifier::getLinuxMachineID();
         $this->assertIsNotBool($lmid);
         $this->assertIsString($lmid);
-        $this->assertNotEmpty($lmid);        
+        $this->assertNotEmpty($lmid);
     }
 }
