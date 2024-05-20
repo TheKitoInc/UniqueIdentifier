@@ -11,7 +11,7 @@ namespace Kito\UniqueIdentifier;
  */
 class MachineIdentifier
 {
-    const linuxMachineIDPath = '/etc/machine-id';
+    public const linuxMachineIDPath = '/etc/machine-id';
 
     public static function getLinuxMachineID(): ?string
     {
